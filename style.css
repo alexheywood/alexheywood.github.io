@@ -30,7 +30,13 @@
   margin: auto;
   padding: 0 30px;
 }
-
+.projects-block {
+    
+    background-color: gainsboro;
+    width: 100vw;
+    height: 100vh;
+    
+}
 .auto-type {
     color: #1e90ff;
 }
@@ -64,7 +70,7 @@
   list-style: none;
 }
 .menu-list li a{
-  color: #fff;
+  color: skyblue;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -93,7 +99,7 @@
   text-align: justify;
 }
 .icon{
-  color: #fff;
+  color: skyblue;
   font-size: 20px;
   cursor: pointer;
   display: none;
