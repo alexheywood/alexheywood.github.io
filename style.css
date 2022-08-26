@@ -1,0 +1,191 @@
+body {
+    font-family: 'Signika Negative', sans-serif;
+    display: flex;
+    margin: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    font-size: 25px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    float: right;
+    padding-left: 50px;
+    padding-top: 50px;
+    position: absolute;
+}
+.navbar {
+    width: 100%;
+    float: right;
+    position: fixed;
+    background-color: #109497;
+    padding: 20px;
+}
+
+
+.navbar a {
+  color: #808080;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: auto;
+  color: white;
+
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+clear: both;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.links {
+    float: right;
+    padding: 10px;
+    padding-right: 20%;
+}
+
+.logo {
+
+}
+.intro-block {
+    height: 80vh;
+    width: 100vw;
+    background-color: #109497;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-top: 10%;
+    color: white;
+    overflow: hidden;
+    
+}
+
+.intro-block h1 {
+    font-size: 40px;
+}
+.services-block {
+    height:100vh;
+    width: 100vw;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left: 20%;
+    padding-top: 10%;
+    color: gray;
+    overflow:hidden;
+}
+
+.intro-text {
+}
+
+.projects-block {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F8F8FF;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-top: 10%;
+    color: black;
+}
+
+.button-1 {
+  background-color: #0d7371;
+  border-radius: 5px;
+  border-style: none;
+  box-sizing: border-box;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  height: 60px;
+  width: 150px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 10px;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #1cc7c4;
+ border: 2px solid white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+}
+.grid-item {
+
+  font-size: 30px;
+  text-align: center;
+}
+
+.service-post {
+    display: grid;
+}
+
+.profileimage {
+    
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 10px;
+    position: relative;
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    body { 
+    
+    font-size: 15px; 
+        
+    }
+    
+    .navbar a {
+  color: #808080;
+  text-align: left;
+  margin-right: 40px;
+  text-decoration: none;
+  font-size: auto;
+  color: white;
+  display: contents;
+  
+}
+    
+.navbar {
+    width: 100%;
+    position: fixed;
+    background-color: #109497;
+    padding: 20px;
+    float: left;
+}
+
+
+}
