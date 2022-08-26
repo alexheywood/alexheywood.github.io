@@ -32,11 +32,29 @@
 }
 .projects-block {
     
-    background-color: gainsboro;
+    background-color: #F8F8FF;
     width: 100vw;
     height: 100vh;
     
 }
+
+.services-block {
+    
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+
+.contact-block {
+    
+    background-color: #F8F8FF;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
 .auto-type {
     color: #1e90ff;
 }
