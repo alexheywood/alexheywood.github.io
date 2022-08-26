@@ -4,7 +4,7 @@ body {
     margin: 0;
     background-color: #ffffff;
     overflow-x: hidden;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 a {
@@ -24,6 +24,9 @@ a {
     position: fixed;
     background-color: #109497;
     padding: 20px;
+    clear:both;
+    position:absolute;
+    display: block;
 }
 
 
@@ -160,32 +163,40 @@ clear: both;
     
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 400px) {
 
     body { 
     
-    font-size: 15px; 
+    font-size: 20px; 
+    text-align: center;
+    padding: 0%;
         
     }
     
-    .navbar a {
-  color: #808080;
-  text-align: left;
-  margin-right: 40px;
-  text-decoration: none;
-  font-size: auto;
-  color: white;
-  display: contents;
-  
-}
-    
 .navbar {
-    width: 100%;
     position: fixed;
     background-color: #109497;
-    padding: 20px;
-    float: left;
 }
 
 
+.navbar a {
+  color: #808080;
+  text-decoration: none;
+  color: white;
+
+}
+
+
+.links {
+padding-bottom: 20px;
+text-align: center;
+display: inline;
+width: auto;
+}
+
+    .intro-block {
+        padding: 2px;
+        padding-top: 100px;
+    }
 }
