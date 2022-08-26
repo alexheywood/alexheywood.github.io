@@ -154,8 +154,8 @@
   .navbar .menu-list{
     position: fixed;
     height: 100vh;
-    width: 70%;
-    max-width: 400px;
+    width: 40%;
+    max-width: 70%;
     left: -100%;
     top: 0px;
     display: block;
