@@ -20,7 +20,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Features</a></li>
+        <li><a class="menulink" href="#contact">Contact</a></li>
         <li><a href="http://fretzine.tumblr.com"></a></li>
       </ul>
       <div class="icon menu-btn">
@@ -59,6 +59,8 @@
     <div class="content">
       <div class="title">Get in touch</div>
       <p>Contact me bellow.</p>
+        
+        
     </div>
   </div>
     </div>
@@ -69,9 +71,10 @@
     const navbar = document.querySelector(".navbar");
     const menuBtn = document.querySelector(".menu-btn");
     const cancelBtn = document.querySelector(".cancel-btn");
+    const menulink = document.querySelector(".menulink");
     
       var typed = new Typed(".auto-type", {
-        strings: ["developer", "coder", "designer", "ginger"],
+        strings: ["developer.", "coder.", "designer.", "ginger."],
         typeSpeed: 40,
         backSpeed: 40,
         loop: true,
@@ -88,6 +91,11 @@
       navbar.classList.remove("show");
       menuBtn.classList.remove("hide");
     }
+    
+    menulink.onclick = () => {
+      window.location = "/index.html#contact";
+    }
+    
     window.onscroll = ()=>{
       this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
     }

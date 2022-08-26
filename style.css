@@ -30,12 +30,30 @@
   margin: auto;
   padding: 0 30px;
 }
+
+
 .projects-block {
     
     background-color: #fff;
     width: 100vw;
     height: 100vh;
+    padding-top: 10%;
 }
+.services-block {
+    
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10%;
+}
+.contact-block {
+    
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10%;
+}
+
 .auto-type {
     color: #1e90ff;
 }
@@ -136,7 +154,7 @@
   .navbar .menu-list{
     position: fixed;
     height: 100vh;
-    width: 100%;
+    width: 70%;
     max-width: 400px;
     left: -100%;
     top: 0px;
@@ -170,6 +188,28 @@
     .title {
         font-size: 15px;
     }
+    
+    .projects-block {
+    
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20%;
+}
+        .services-block {
+    
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20%;
+}
+        .contact-block {
+    
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20%;
+}
 }
 @media (max-width: 380px) {
   .navbar .logo a{
