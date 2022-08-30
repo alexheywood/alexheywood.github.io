@@ -17,11 +17,11 @@
         <div class="icon cancel-btn">
           <i class="fas fa-times"></i>
         </div>
-        <li><a href="#">Home</a></li>
-        <li><a id="menulink" href="#projects">Projects</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="http://fretzine.tumblr.com"></a></li>
+        <li class="homelink"><a href="#">Home</a></li>
+        <li class="menulink"><a href="#projects">Projects</a></li>
+        <li class="menulink1"><a href="#services">Services</a></li>
+        <li class="menulink2"><a href="#contact">Contact</a></li>
+        <li class="menulink3"><a href="http://fretzine.tumblr.com"></a></li>
       </ul>
       <div class="icon menu-btn">
         <i class="fas fa-bars"></i>
@@ -72,6 +72,10 @@
     const menuBtn = document.querySelector(".menu-btn");
     const cancelBtn = document.querySelector(".cancel-btn");
     const menulink = document.querySelector(".menulink");
+    const menulink1 = document.querySelector(".menulink1");
+    const menulink2 = document.querySelector(".menulink2");
+    const menulink3 = document.querySelector(".menulink3");
+    const homelink = document.querySelector(".homelink");
     
       var typed = new Typed(".auto-type", {
         strings: ["developer.", "coder.", "designer.", "ginger."],
@@ -93,7 +97,33 @@
     }
     
     menulink.onclick = () => {
-        navbar.classList.add("show");
+        navbar.classList.add("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+    }
+    
+    menulink1.onclick = () => {
+        navbar.classList.add("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+    }
+    
+    menulink2.onclick = () => {
+        navbar.classList.add("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+    }
+    
+    menulink3.onclick = () => {
+        navbar.classList.add("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+    }
+    
+    homelink.onclick = () => {
+        navbar.classList.add("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
     }
     
     
