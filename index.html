@@ -29,18 +29,61 @@
     </div>
   </nav>
   <div class="banner">
+          <div class="profilepic">
+        <svg height="500" width="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#8A3FFC" d="M53,-53.5C65.8,-40.2,71.3,-20.1,69.1,-2.3C66.8,15.6,56.8,31.2,44,43.5C31.2,55.8,15.6,64.9,0.4,64.4C-14.7,64,-29.4,54.1,-45.9,41.7C-62.4,29.4,-80.6,14.7,-79.5,1.1C-78.4,-12.6,-58,-25.1,-41.6,-38.4C-25.1,-51.6,-12.6,-65.6,3.8,-69.3C20.1,-73.1,40.2,-66.7,53,-53.5Z" transform="translate(100 100)" />
+</svg>
+      </div>
     <div class="writing">
-    <h1>I am a <span class="auto-type"></span></h1>
+    <h1>Hi, my name is Alex.<br /> I am a <span class="auto-type"></span></h1>
       </div>
     </div>
-    
         <div class="projects-block" id="projects">
   <div class="about">
     <div class="content">
+        
       <div class="title">Projects</div>
       <p>I love to work with local business to create beautiful and engaging websites that your audience will love. It has been a pleasure to work with the companies belowing helping them to create a unique and authentic experience.</p>
+    <br />
+        
+<div class="projects-container">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img class="slideshowimg" src="https://miro.medium.com/max/1400/0*wmt0QsSOnsG6ePag.png" style="width:100%">
+  <div class="text">Project One</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://designshack.net/wp-content/uploads/Website-Browser-Mockup-PSD-Template.jpg" style="width:100%">
+  <div class="text">Project Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://i.pinimg.com/originals/db/99/93/db99932dd8509dfa1c0542d8af4b00b1.jpg" style="width:100%">
+  <div class="text">Project Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
         
     </div>
+        
+      </div>
   </div>
     </div>
     
@@ -58,7 +101,29 @@
   <div class="about">
     <div class="content">
       <div class="title">Get in touch</div>
-      <p>Contact me bellow.</p>
+     
+        
+<div class="form-container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Contact Number</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Let me know what you need..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
         
         
     </div>
@@ -126,6 +191,35 @@
         menuBtn.classList.remove("hide");
     }
     
+
+    //slideshow code
+    
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
     
   </script>
 </body>
