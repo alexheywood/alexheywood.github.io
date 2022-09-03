@@ -296,6 +296,10 @@ html {
   text-align: center;
 }
 
+.slidepic {
+  max_height: 500px;
+}
+
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
