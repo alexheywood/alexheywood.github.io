@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Heywood | Local website designer</title>
+    <link rel="icon" type="image/x-icon" href="ah.svg"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+    <header>
   <nav class="navbar">
     <div class="content">
       <div class="logo">
@@ -29,6 +31,8 @@
       </div>
     </div>
   </nav>
+    </header>
+    <main>
   <div class="banner">
           
     <div class="writing">
@@ -42,7 +46,8 @@
     <div class="content">
         
       <div class="title">Projects</div>
-      <p>I love to work with local business to create beautiful and engaging websites that your audience will love. It has been a pleasure to work with the companies belowing helping them to create a unique and authentic experience.</p>
+      <p>Over the years I have had the pleasure to work on some great projects, check out some of my favourites so far:</p>
+    <br />
     <br />
         
 <div class="projects-container">
@@ -87,7 +92,27 @@
   <div class="about">
     <div class="content">
       <div class="title">Services</div>
-      <p>I have been developing my website development skills for over 4 years.</p>
+      <p>I use a variety of modern technologies to build fast and reliable websites:</p>
+    <br>
+        <div class="icons-wrapper">
+        <div class="icons">
+        
+        <ul>
+  <li><img src="svg/html.svg" alt="HTML">HTML</li>
+  <li><img src="svg/js.svg" alt="Javascript">Javascript</li>
+  <li><img src="svg/css.svg" alt="CSS">CSS</li>
+  <li><img src="/svg/react.svg" alt="React">React.js</li>
+            </ul>
+            <ul>
+  <li><img src="/svg/tailwind.svg" alt="Tailwind">Tailwind</li>
+  <li><img src="/svg/net.svg">Micorosft .Net</li>
+<li><img src="svg/csharp.svg">C#</li>
+<li><img src="svg/mysql.svg">MySQL</li>
+</ul>
+        </div>
+        </div>
+        <p style="text-align: center">I am steadily building my skills in web, mobile and desktop development. You can see what I'm studying on my blog:</p>
+        <div class="btn-container"><button class="github-btn"><a href="http://fretzine.tumblr.com">Development Blog</a></button></div>
     </div>
   </div>
     </div>
@@ -121,6 +146,7 @@
     </div>
   </div>
     </div>
+    </main>
     <footer>
         <div id="footerlinks">
         <ul>
@@ -139,7 +165,7 @@
         </ul>
         </div>
         <div class="footertext">
-            <p>Alex Heywood - South Wales based web developer.</p>
+            <p>&copy; Alex Heywood 2022 - South Wales based web developer.</p>
            </div>
     </footer>
     
@@ -157,7 +183,7 @@
     const arrow = document.querySelector(".arrow_bounce");
     
       var typed = new Typed(".auto-type", {
-        strings: ["find your audience.", "engage with fans.", "showcase products.", "increase sales."],
+        strings: ["find your audience.", "engage with fans.", "showcase products.", "increase sales.", "start your dream job."],
         typeSpeed: 40,
         backSpeed: 40,
         loop: true,
@@ -206,7 +232,7 @@
     }
     
     arrow.onclick = () => {
-        scrollTo(0, 1100)
+        scrollTo(0, 1130)
     }
 
     //slideshow code

@@ -1,4 +1,6 @@
-
+* {
+    align-content: center;
+}
 @media (max-width: 1230px) {
   .content{
     padding: 0 60px;
@@ -16,6 +18,13 @@
 }
 
 @media (max-width: 688px) {
+    
+    .icons img{
+    width: 50px;
+    height: 50px;
+}
+
+    
   body.disabled{
     overflow: hidden;
   }
@@ -81,7 +90,7 @@
     
     .projects-block {
     
-    background-color: #fff;
+    background-color: #f6f6f6;
     width: 100vw;
     height: 100vh;
     padding-top: 20%;
@@ -109,7 +118,7 @@
 /* Slideshow CSS */
 
 .projects-container {
-    background-color: #F0F0F0;
+    background-color: white;
     padding: 5px;
     border-radius: 10px;
     height: 100%;
@@ -133,9 +142,12 @@
 
 footer {
     padding-left: 45px;
+    text-decoration: none;
 }
     
-    
+    footer a {
+        text-decoration: none;
+    }
 .arrow
 {
   position: relative;

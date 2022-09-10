@@ -28,9 +28,9 @@ html {
 }
 
 .projects-container {
-    background-color: #F0F0F0;
+    background-color: white;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 0px;
     height: 100%;
     width: 60%;
     margin: auto;
@@ -82,8 +82,9 @@ html {
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
+  width: 40%;
   text-align: center;
+  background-color: lightsteelblue;
 }
 
 /* Number text (1/3 etc) */
@@ -135,6 +136,41 @@ html {
     max-height:400px;
 }
 
+.icons-wrapper {
+    background-color: #f6f6f6;
+    padding: 40px;
+    
+}
+.icons ul {
+    
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icons li {
+  box-sizing: border-box;
+  list-style: none;
+  width: 20%;
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+
+}
+
+.icons li:hover {
+    filter: invert(1)
+}
+
+.icons img{
+    width: 150px;
+    height: 150px;
+}
+
 
 .profilepic {
     display: flex;
@@ -158,16 +194,20 @@ footer {
     position: absolute;
     width: 100%;
     overflow: hidden;
+    text-decoration: none;
 }
-
+footer a {
+    text-decoration: none;
+    color: black;
+}
 .footertext {
     float: right;
     position: relative;
     display: flex;
-    padding-left: 500px;
+    padding-left: 800px;
     top: -60px;
     overflow: hidden;
-    right: 20%;
+    right: 30%;
 }
 
 .btn-container {
@@ -208,7 +248,7 @@ footer {
 
 .projects-block {
     
-    background-color: #fff;
+    background-color: #f6f6f6;
     width: 100vw;
     height: 100vh;
     padding-top:6%;
