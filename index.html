@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Heywood | Local website designer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
@@ -31,9 +32,11 @@
   <div class="banner">
           
     <div class="writing">
-    <h1>Hi, my name is Alex.<br /> I am a <span class="auto-type"></span></h1>
+    <h1>Hi, my name is Alex.<br /> I can help you <span class="auto-type"></span></h1>
       </div>
     </div>
+    <div class="arrow bounce arrow_bounce"><a href="#projects"></a></div>
+    
         <div class="projects-block" id="projects">
   <div class="about">
     <div class="content">
@@ -47,37 +50,34 @@
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img class="slidepics" src="https://miro.medium.com/max/1400/0*wmt0QsSOnsG6ePag.png" style="width:100%">
+  <img class="slideshowimg" src="https://miro.medium.com/max/1400/0*wmt0QsSOnsG6ePag.png" >
   <div class="text">Project One</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img class="slidepics" src="https://designshack.net/wp-content/uploads/Website-Browser-Mockup-PSD-Template.jpg" style="width:100%">
+  <img class="slideshowimg" src="https://designshack.net/wp-content/uploads/Website-Browser-Mockup-PSD-Template.jpg">
   <div class="text">Project Two</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img class="slidepics" src="https://i.pinimg.com/originals/db/99/93/db99932dd8509dfa1c0542d8af4b00b1.jpg" style="width:100%">
+  <img class="slideshowimg" src="https://i.pinimg.com/originals/db/99/93/db99932dd8509dfa1c0542d8af4b00b1.jpg">
   <div class="text">Project Three</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">❮</a>
 <a class="next" onclick="plusSlides(1)">❯</a>
-
+  
 </div>
 <br>
-
-<div style="text-align:center">
+    <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-
-
-        
     </div>
+        <div class="btn-container"><button class="github-btn"><a href="http://github.com/alexheywood">Check out my GitHub</a></button></div>
         
       </div>
   </div>
@@ -96,26 +96,22 @@
          <div class="contact-block" id="contact">
   <div class="about">
     <div class="content">
-      <div class="title">Get in touch</div>
+      <div class="title">Get in touch:</div>
      
         
 <div class="form-container">
-  <form action="/action_page.php">
+  <form action="#">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="country">Contact Number</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+    <label for="country">Contact Number</label><br>
+    <input id="country" type="text" placeholder="+44" name="country"><br>
 
     <label for="subject">Message</label>
-    <textarea id="subject" name="subject" placeholder="Let me know what you need..." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Let me know what you need..." style="height:100px"></textarea>
 
     <input type="submit" value="Submit">
   </form>
@@ -125,6 +121,27 @@
     </div>
   </div>
     </div>
+    <footer>
+        <div id="footerlinks">
+        <ul>
+        <li><svg width="20" height="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 330.001 330.001" style="enable-background:new 0 0 330.001 330.001;" xml:space="preserve">
+<g id="XMLID_348_">
+	<path id="XMLID_350_" d="M173.871,177.097c-2.641,1.936-5.756,2.903-8.87,2.903c-3.116,0-6.23-0.967-8.871-2.903L30,84.602
+		L0.001,62.603L0,275.001c0.001,8.284,6.716,15,15,15L315.001,290c8.285,0,15-6.716,15-14.999V62.602l-30.001,22L173.871,177.097z"
+		/>
+	<polygon id="XMLID_351_" points="165.001,146.4 310.087,40.001 19.911,40 	"/>
+
+</svg>
+            <a href="mailto:contact@alexheywood.co.uk">contact@alexheywood.co.uk</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg><a href="twitter.com/alexheywood">@alexheywood</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg><a href="https://github.com/alexheywood">GitHub</a></li>
+        </ul>
+        </div>
+        <div class="footertext">
+            <p>Alex Heywood - South Wales based web developer.</p>
+           </div>
+    </footer>
     
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
@@ -137,9 +154,10 @@
     const menulink2 = document.querySelector(".menulink2");
     const menulink3 = document.querySelector(".menulink3");
     const homelink = document.querySelector(".homelink");
+    const arrow = document.querySelector(".arrow_bounce");
     
       var typed = new Typed(".auto-type", {
-        strings: ["developer.", "coder.", "designer.", "ginger."],
+        strings: ["find your audience.", "engage with fans.", "showcase products.", "increase sales."],
         typeSpeed: 40,
         backSpeed: 40,
         loop: true,
@@ -187,6 +205,9 @@
         menuBtn.classList.remove("hide");
     }
     
+    arrow.onclick = () => {
+        scrollTo(0, 1100)
+    }
 
     //slideshow code
     
@@ -216,7 +237,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-    
+      
   </script>
 </body>
 </html>
