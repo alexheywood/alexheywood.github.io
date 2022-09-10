@@ -131,9 +131,11 @@
     visibility: hidden;
 }
 
-.footer {
-    padding-left: 10%;
+footer {
+    padding-left: 45px;
 }
+    
+    
 .arrow
 {
   position: relative;
