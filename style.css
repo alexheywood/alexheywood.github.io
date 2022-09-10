@@ -28,11 +28,10 @@ html {
 }
 
 .projects-container {
-    background-color: white;
+    background-color: none;
     padding: 5px;
     border-radius: 0px;
-    height: 100%;
-    width: 60%;
+    width: 100%;
     margin: auto;
 }
     
@@ -41,8 +40,8 @@ html {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  width: 90%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   padding-top: 5%;
   overflow: hidden;
 }
@@ -62,6 +61,7 @@ html {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background: lightgray;
 }
 
 /* Position the "next button" to the right */
@@ -132,8 +132,7 @@ html {
 .slideshowimg {
     
     width: 100%;
-    min-height:400px;
-    max-height:400px;
+
 }
 
 .icons-wrapper {
@@ -260,7 +259,7 @@ footer a {
     
     background-color: #f6f6f6;
     width: 100vw;
-    height: 110vh;
+    height: 120vh;
     padding-top:6%;
 }
 .services-block {
@@ -289,6 +288,7 @@ footer a {
   transition: all 0.3s ease;
  background: white;
     height: 90px;
+    overflow: hidden;
 
 }
 .navbar.sticky{
