@@ -96,7 +96,7 @@
 
     
     .github-btn {
-  background-color: skyblue; /* Green */
+  background-color: skyblue; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -116,9 +116,9 @@
     
     background-color: #f6f6f6;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     padding-top: 20%;
-        overflow: hidden;
+    overflow: hidden;
 }
         .services-block {
     
