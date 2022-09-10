@@ -179,12 +179,22 @@ html {
     padding-top: 15%;
 }
 .writing {
+    width: 100%;
     display: flex;
     justify-content: left;
-    padding-left: 20%;
+    padding-left: 23%;
     font-size: 33px;
     padding-top: 20%;
 }
+
+.writing1 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding-left: 0%;
+    font-size: 63px;
+}
+
 
 footer {
     background-color: lightgrey;
@@ -250,21 +260,21 @@ footer a {
     
     background-color: #f6f6f6;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     padding-top:6%;
 }
 .services-block {
     
     background-color: #fff;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     padding-top: 6%;
 }
 .contact-block {
     
     background-color: #fff;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     padding-top: 6%;
 }
 
