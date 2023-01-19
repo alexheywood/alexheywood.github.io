@@ -181,7 +181,7 @@ body {
   }
 
   .mobile-description {
-    display: block;
+    display: block !important;
     margin-top: 50px;
   }
 
